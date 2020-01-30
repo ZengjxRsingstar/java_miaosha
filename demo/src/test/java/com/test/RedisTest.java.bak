@@ -1,0 +1,46 @@
+//package com.test;
+//
+//import com.zengjx.miaosha.StartApplcation;
+//
+//import com.zengjx.miaosha.service.UserService;
+//import org.junit.Test;
+//import org.junit.runner.RunWith;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.boot.test.context.SpringBootTest;
+//import org.springframework.test.context.junit4.SpringRunner;
+//import redis.clients.jedis.Jedis;
+//import redis.clients.jedis.JedisPool;
+//
+///**
+// * @ClassName HelloController
+// * @Description TODO
+// * @Author zengjx
+// * @Company zengjx
+// * @Date 2020/1/26  8:53
+// * @Version V1.0
+// */
+//
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = StartApplcation.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//
+//public class RedisTest {
+//
+//  @Autowired
+// private   static JedisPool jedisPool;
+//    @Autowired
+//    private UserService userService;
+//    @Test
+//  public   void   test1(){
+//      Jedis resource = jedisPool.getResource();
+//      System.out.println(resource);
+//  }
+//  @Test
+//  public    void   test2(){
+//
+////      User user= userService.getUserById(1);
+////
+////      System.out.println(user);
+//      System.out.println("test2");
+//  }
+//
+//}

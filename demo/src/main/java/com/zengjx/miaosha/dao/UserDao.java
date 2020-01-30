@@ -1,10 +1,7 @@
 package com.zengjx.miaosha.dao;
 
 import com.zengjx.miaosha.domain.User;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 /**
  * @ClassName HelloController
@@ -19,6 +16,8 @@ public interface UserDao {
     @Select("SELECT  id,name  FROM   USER   WHERE    id =#{id}")
     public User    getUserById( @Param("id") Integer  id);
 
-    @Insert("insert into user (id, name) values  (#{id} ,#{name} ")
+    @Insert("insert into user (name) values  (#{name} )")
+    @Options(useGeneratedKeys = true,keyProperty ="id",keyColumn = "id")
+
     public  int  inseartUser(User  user);
  }

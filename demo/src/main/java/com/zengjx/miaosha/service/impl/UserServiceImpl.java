@@ -2,6 +2,7 @@ package com.zengjx.miaosha.service.impl;
 
 import com.zengjx.miaosha.dao.UserDao;
 import com.zengjx.miaosha.domain.User;
+import com.zengjx.miaosha.service.MiaoshaUserService;
 import com.zengjx.miaosha.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,10 @@ public class UserServiceImpl  implements UserService {
     public int inseartUser(User user) {
 
         int ret= userDao.inseartUser(user);
-
+        System.out.println("ret ="+ret+"  userid"+user.getId());
         return ret;
     }
+
+
+
 }
