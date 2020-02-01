@@ -1,6 +1,5 @@
-package com.zengjx.miaosha.service.impl;
+package com.zengjx.miaosha.service.Impl;
 
-import com.zengjx.miaosha.controller.LoginController;
 import com.zengjx.miaosha.dao.MiaoshaUserDao;
 import com.zengjx.miaosha.domain.MiaoshaUser;
 import com.zengjx.miaosha.exception.GlobalException;
@@ -9,14 +8,12 @@ import com.zengjx.miaosha.redis.RedisService;
 import com.zengjx.miaosha.result.CodeMsg;
 import com.zengjx.miaosha.result.Result;
 import com.zengjx.miaosha.service.MiaoshaUserService;
-import com.zengjx.miaosha.utils.MD5Util;
 import com.zengjx.miaosha.utils.UUIDUtil;
 import com.zengjx.miaosha.vo.LoginVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.plugin.util.UIUtil;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;

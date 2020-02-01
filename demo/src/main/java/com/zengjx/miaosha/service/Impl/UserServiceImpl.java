@@ -1,8 +1,7 @@
-package com.zengjx.miaosha.service.impl;
+package com.zengjx.miaosha.service.Impl;
 
 import com.zengjx.miaosha.dao.UserDao;
 import com.zengjx.miaosha.domain.User;
-import com.zengjx.miaosha.service.MiaoshaUserService;
 import com.zengjx.miaosha.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

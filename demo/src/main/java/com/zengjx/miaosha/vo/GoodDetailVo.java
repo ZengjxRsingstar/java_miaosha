@@ -50,4 +50,15 @@ public class GoodDetailVo {
     public void setUser(MiaoshaUser user) {
         this.user = user;
     }
+
+
+    @Override
+    public String toString() {
+        return "GoodDetailVo{" +
+                "miaoshaStatus=" + miaoshaStatus +
+                ", remainSeconds=" + remainSeconds +
+                ", goods=" + goods +
+                ", user=" + user +
+                '}';
+    }
 }
