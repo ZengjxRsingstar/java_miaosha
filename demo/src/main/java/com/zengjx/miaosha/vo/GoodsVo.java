@@ -4,14 +4,7 @@ import com.zengjx.miaosha.domain.Goods;
 
 import java.util.Date;
 
-/**
- * @ClassName HelloController
- * @Description TODO
- * @Author zengjx
- * @Company zengjx
- * @Date 2020/1/29  20:37
- * @Version V1.0
- */
+
 public class GoodsVo  extends Goods {
 
     private Double miaoshaPrice;//秒杀价格

@@ -9,31 +9,19 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-/**
- * @ClassName HelloController
- * @Description TODO
- * @Author zengjx
- * @Company zengjx
- * @Date 2020/1/30  20:46
- * @Version V1.0
- */
-@Service
 
+@Service
 public class GoodsServiceImpl implements GoodsService {
     @Autowired
     private GoodsDao   goodsDao;
-
     @Override
     public List<GoodsVo> listGoods() {
         List<GoodsVo> goodsVos = goodsDao.listGoodsVo();
         return goodsVos;
     }
-
     @Override
     public GoodsVo getGoodsVoByGoodsId(Long goodsId) {
-
         GoodsVo goodsVo = goodsDao.getGoodsVoByGoodsId(goodsId);
-
         return goodsVo;
     }
     /***
@@ -47,21 +35,17 @@ public class GoodsServiceImpl implements GoodsService {
         miaoshaGoods.setGoodsId(goods.getId());
         miaoshaGoods.setStockCount(goods.getStockCount());
         int stock = goodsDao.reduceStock(miaoshaGoods);
-
          return  stock>0;
     }
-
     /**
      * 恢复库存
      * @param goodsList
      */
     public void resetStock(List<GoodsVo> goodsList) {
-
         for (GoodsVo goodsVo : goodsList) {
             MiaoshaGoods  goods =new MiaoshaGoods();
             goods.setStockCount(goodsVo.getStockCount());
             goodsDao.resetStock(goods);
         }
-
     }
 }

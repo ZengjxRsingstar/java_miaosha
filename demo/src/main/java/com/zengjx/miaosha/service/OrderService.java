@@ -17,4 +17,8 @@ public interface OrderService {
 
     MiaoshaOrder getMiaoshaOrderByUserIdGoodsId(Long id, Long goodsId);
     public int insertMiaoshaOrder(MiaoshaOrder miaoshaOrder);
+
+    void deleteOrders();
+
+    OrderInfo getOrderById(long orderId);
 }

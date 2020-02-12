@@ -19,20 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
   @RequestMapping("/hello")
  public  String   hello( String  string){
-
        return "hello  "+string;
-
  }
  @RequestMapping("/hellosuccess")
  public Result<String>  sucess(){
-
-
     return   Result.success("hello success");
  }
  @RequestMapping("/helloerror")
  public  Result<String>   error(){
       return  Result.error(CodeMsg.SERVER_ERROR) ;
-
  }
  @RequestMapping("/thymeleaf")
  public   String   thymeleaf(Model  model){

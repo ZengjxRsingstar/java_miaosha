@@ -19,4 +19,6 @@ public      List<GoodsVo>    listGoods();
 
  public    GoodsVo   getGoodsVoByGoodsId(Long goodsId);
  public boolean reduceStock(GoodsVo goods);
+
+    void resetStock(List<GoodsVo> goodsVoList);
 }

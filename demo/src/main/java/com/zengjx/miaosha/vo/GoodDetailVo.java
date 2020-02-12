@@ -15,10 +15,8 @@ public class GoodDetailVo {
     private  int    remainSeconds=0;//秒杀倒计时
     private  GoodsVo  goods ;//秒杀商品
     private MiaoshaUser  user;
-
     public GoodDetailVo() {
     }
-
     public int getMiaoshaStatus() {
         return miaoshaStatus;
     }

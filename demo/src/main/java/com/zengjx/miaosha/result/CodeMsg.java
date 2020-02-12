@@ -1,5 +1,7 @@
 package com.zengjx.miaosha.result;
 
+import com.zengjx.miaosha.redis.KeyPrefix;
+
 /**
  * @ClassName CodeMsg
  * @Description TODO
@@ -10,6 +12,10 @@ package com.zengjx.miaosha.result;
  * @function: 消息
  */
 public class CodeMsg {
+    //用户模块
+    public static final CodeMsg GETBYID_ERROR = new CodeMsg(500700,"用户查询失败") ;
+    public static final CodeMsg USER_PASSWRPD_ERROR =new CodeMsg(500701,"用户查询失败") ;
+    public static final CodeMsg MIAO_SHA_ORDER = new CodeMsg(500702,"该用户秒杀订单已经存在");
     private int code;
     private String msg;
 
@@ -25,10 +31,12 @@ public class CodeMsg {
     public static CodeMsg MOBILE_NOT_EXIST = new CodeMsg(500214, "手机号不存在");
     public static CodeMsg PASSWORD_ERROR = new CodeMsg(500215, "密码错误");
 
+
+
     //商品模块 5003XX
 
     //订单模块 5004XX
-
+    public static CodeMsg ORDER_NOT_EXIST =new CodeMsg(500400,"秒杀订单不存在");
     //秒杀模块 5005XX
     public static CodeMsg MIAO_SHA_OVER = new CodeMsg(500500, "商品已经秒杀完毕");
     public static CodeMsg REPEATE_MIAOSHA = new CodeMsg(500501, "不能重复秒杀");

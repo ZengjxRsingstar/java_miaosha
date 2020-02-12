@@ -17,7 +17,15 @@ public interface OrderDao {
 	public long insert(OrderInfo orderInfo);
 	
 	@Insert("insert into miaosha_order (user_id, goods_id, order_id)values(#{userId}, #{goodsId}, #{orderId})")
+
+	@SelectKey(keyColumn="id", keyProperty="id", resultType=long.class, before=false, statement="select last_insert_id()")
 	public int insertMiaoshaOrder(MiaoshaOrder miaoshaOrder);
 
-	
+    @Delete("DELETE   FROM miaosha_order  ;")
+    void deleteOrders();
+    @Select("SELECT id, user_id, order_id, goods_id from `miaosha`.`miaosha_order` LIMIT 0, 1000 " )
+    OrderInfo getMiaoshaOrderByOrderId(long orderId);
+
+	@Select("select * from order_info where id = #{orderId}")
+	public OrderInfo getOrderById(@Param("orderId")long orderId);
 }

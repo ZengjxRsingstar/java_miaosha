@@ -2,31 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0c35429-ec13-4b2c-8954-9fd3d2c41766" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/SampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MiaoshaMessge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/GoodsKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/MiaoshaKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties.bak2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/hello1.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/miaoshaorder_detail.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/DemoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/MiaoshaUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/MiaoshaUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/result/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/impl/MiaoshaUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodDetailVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/LoginVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/layer/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/layer/goods_detail.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/DemoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/DemoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/MiaoshaUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/MiaoshaUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/dao/MiaoshaUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/dao/MiaoshaUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/redis/OrderKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/redis/OrderKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/redis/RedisService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/result/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/MiaoshaUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/MiaoshaUserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/impl/MiaoshaUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/impl/MiaoshaUserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zengjx/miaosha/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/goods_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/goods_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/goods_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/goods_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/miaoshao.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,10 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/GoodsDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="79">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,43 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="485" selection-start-line="485" selection-end-line="485" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="113">
+              <caret line="75" column="44" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +97,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="87">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-203">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,43 +127,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/MiaoshaUserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="19" column="5" selection-start-line="19" selection-end-line="19" selection-end-column="61" />
+            <state relative-caret-position="-115">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaGoods.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="106" column="15" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +189,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WebEngineContext</find>
+      <find>WebContext</find>
+      <find>}</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -169,56 +203,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/utils/JedisPoolUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/JedisPoolUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/validator/IsMobileValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/validator/IsMobile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/exception/MyGlobalExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/BasePrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/KeyPrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/MiaoshaUserKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisPoolFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/UserKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/impl/MiaoshaUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/exception/GlobalExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/exception/RedisException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/SuperClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/SubClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/NotInitilization.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/Sub.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/DeadLoopClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/RedisTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/Goods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaGoods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/OrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/utils/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/impl/GoodsServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/LoginVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodDetailVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/MiaoshaUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/goods_detail.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodDetailVo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/result/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQconfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQSend.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/MiaoshaKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/GoodsKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MiaoshaMessge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/DemoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/hello.htm" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/hello1.htm" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/result/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/SimpleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/SampleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java" />
       </list>
     </option>
@@ -255,6 +289,22 @@
           <item name="miaoshao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="miaoshao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="miaoshao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="miaoshao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -263,10 +313,9 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="103" />
+    <option name="width" value="1289" />
+    <option name="height" value="711" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -274,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -334,15 +382,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,7 +391,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
@@ -421,24 +469,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,10 +492,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="miaoshao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,25 +512,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zengjx.miaosha.controller" />
       <recent name="com.zengjx.miaosha.dao" />
       <recent name="com.zengjx.miaosha.utils" />
       <recent name="com.zengjx.miaosha.domain" />
       <recent name="com.zengjx.miaosha.redis" />
-      <recent name="com.zengjx.miaosha.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\resources\static" />
+      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\resources" />
+      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\java\com\zengjx\miaosha\controller" />
       <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\resources\static\img" />
       <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\resources\static\layer" />
-      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\myproject\demo\src\main\resources\templates" />
-      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\demo\src\main\java\com\zengjx\miaosha\domain" />
-      <recent name="E:\SSM项目\更多资料请关注微信公众号：码农求职小助手--Java秒杀系统方案优化-高性能高并发实战\project\demo\src\main\java\com\zengjx\miaosha\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -625,7 +660,11 @@
       <workItem from="1579919063094" duration="20537000" />
       <workItem from="1580273169072" duration="12484000" />
       <workItem from="1580365467724" duration="20784000" />
-      <workItem from="1580537076169" duration="15072000" />
+      <workItem from="1580537076169" duration="16017000" />
+      <workItem from="1580691634195" duration="13819000" />
+      <workItem from="1580716286741" duration="17882000" />
+      <workItem from="1580893887643" duration="56197000" />
+      <workItem from="1581322880334" duration="55165000" />
     </task>
     <task id="LOCAL-00001" summary="用户查询">
       <created>1579052073320</created>
@@ -648,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580375158441</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2020 2.1 秒杀功能实现">
+      <created>1580566323245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580566323245</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -684,13 +730,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144108000" />
+    <option name="totallyTimeSpent" value="288116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="76" width="1386" height="625" extended-state="0" />
+    <frame x="103" y="0" width="1289" height="711" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3137255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.268511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -699,9 +745,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.49148935" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8645991" visible="true" weight="0.46680942" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32935154" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4010239" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8645991" visible="true" weight="0.2766727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -709,15 +755,15 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1354009" side_tool="true" weight="0.24914676" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49621785" weight="0.28668943" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49621785" weight="0.28327644" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="JProfiler" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.10409556" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.48634812" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.0693816" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.11391375" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSON Viewer" order="6" />
@@ -730,10 +776,51 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="用户查询" />
     <MESSAGE value="用户登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户登录" />
+    <MESSAGE value="2020 2.1 秒杀功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020 2.1 秒杀功能实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -770,127 +857,193 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java</url>
-          <line>45</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java</url>
-          <line>36</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java</url>
-          <line>50</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
-          <line>64</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java</url>
-          <line>44</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java</url>
-          <line>47</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java</url>
-          <line>27</line>
+          <line>39</line>
           <properties field="redisService" class="com.zengjx.miaosha.controller.GoodsController" />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
@@ -898,114 +1051,145 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/utils/UUIDUtil.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.1.7.RELEASE/spring-boot-devtools-2.1.7.RELEASE.jar!/org/springframework/boot/devtools/restart/RestartLauncher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="65">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/utils/ValidatorUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="68">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisPoolFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/UserKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/MiaoshaKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" column="6" lean-forward="true" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/DeadLoopClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/JedisPoolUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/LoginVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/GoodsKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/MiaoshaUserKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/miaosha_fail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-634" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1487" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/goods_detail.htm5">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/goods_detail.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/miaoshaorder_detail.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hello1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/result/CodeMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="40" />
+        <state relative-caret-position="228">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MiaoshaMessge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="144">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1014,227 +1198,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodDetailVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="121">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar!/org/springframework/aop/framework/AdvisedSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#2500#2501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/OrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="24" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="263">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/MiaoshaService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-          <folding>
-            <element signature="e#6309#6310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE-sources.jar!/org/springframework/web/method/support/ModelAndViewContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="260" selection-start-line="260" selection-end-line="260" />
-          <folding>
-            <element signature="e#8507#8508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE-sources.jar!/org/springframework/util/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE-sources.jar!/org/springframework/core/MethodParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#3466#3467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE-sources.jar!/org/springframework/core/annotation/SynthesizingMethodParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#1680#1681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE-sources.jar!/org/springframework/web/method/HandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-          <folding>
-            <element signature="e#8157#8158#0" expanded="true" />
-            <element signature="e#8190#8191#0" expanded="true" />
-            <element signature="e#8366#8367#0" expanded="true" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#15078#15079#0" expanded="true" />
-            <element signature="e#15133#15134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE-sources.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1436">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="213">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/miaosha_fail.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="204">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/DemoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-755">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="476">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="201">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/SimpleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/SampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/rabbitmq/MQConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="131" column="186" selection-start-line="131" selection-start-column="186" selection-end-line="131" selection-end-column="186" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1243,76 +1322,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="17">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="485" selection-start-line="485" selection-end-line="485" />
+        <state relative-caret-position="115">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="19" column="5" selection-start-line="19" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-122">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/MiaoshaUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/GoodsService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="87">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="106" column="15" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/domain/MiaoshaGoods.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/OrderDetailVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/GoodsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/vo/GoodsVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/dao/GoodsDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="-115">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/redis/OrderKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1321,18 +1430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/service/Impl/MiaoshaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zengjx/miaosha/controller/MiaoshaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="113">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

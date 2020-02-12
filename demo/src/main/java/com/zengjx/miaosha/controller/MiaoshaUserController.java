@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.xml.ws.RequestWrapper;
+
 /**
  * @ClassName HelloController
  * @Description TODO
@@ -29,11 +31,23 @@ public class MiaoshaUserController {
     public Result<MiaoshaUser> getUserById(@PathVariable Long  id)
     {
         Result<MiaoshaUser>   result=new Result<MiaoshaUser>();
-        MiaoshaUser user = miaoshaUserService.getMiaoshaUserById(id);
+        MiaoshaUser user = miaoshaUserService.getMiaoshaUserById(id,"");
         result.setCode(1);
         result.setData(user);
         result.setMsg("查询成功");
         return  result;
+    }
+
+    @RequestMapping("/updateUser/{id}")
+    public Result<Boolean>  updateUser(@PathVariable(value = "id") Long   id){
+
+     Result<Boolean>   result =new Result<>();
+     result.setMsg("更新成功");
+    // miaoshaUserService.updateUserPassword("",id,)
+     result.setData(true);
+     return   result;
+
+
     }
 
 }

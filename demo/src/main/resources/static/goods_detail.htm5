@@ -157,7 +157,7 @@ function doMiaosha(path){
 		},
 		success:function(data){
 			if(data.code == 0){
-				//window.location.href="/miaoshaorder_detail.htm?orderId="+data.data.id;
+				//window.location.href="/order_detail.htm?orderId="+data.data.id;
 				getMiaoshaResult($("#goodsId").val());
 			}else{
 				layer.msg(data.msg);
@@ -201,7 +201,7 @@ function getDetail(){
 		type:"GET",
 		success:function(data){
 			if(data.code == 0){
-				render(data.data);
+				render(data.data);//
 			}else{
 				layer.msg(data.msg);
 			}
