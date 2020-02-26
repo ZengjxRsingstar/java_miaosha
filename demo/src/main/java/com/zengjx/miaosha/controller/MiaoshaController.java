@@ -19,9 +19,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import javax.imageio.ImageIO;
 import javax.jws.WebParam;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.OutputStream;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
@@ -53,10 +58,11 @@ public class MiaoshaController  implements InitializingBean {
   private MQSender  mqSender;
   private HashMap<Long,Boolean>   localOverMap =   new  HashMap<Long,Boolean>();
 
-  @RequestMapping("/do_miaosha")
+  @RequestMapping("/{path}/do_miaosha")
   @ResponseBody
-   public   Result<Integer> do_miaosha(HttpServletRequest   servletRequest,Model  model, @RequestParam (value = "goodsId") Long    goodsId
-          ){
+   public   Result<Integer> do_miaosha(HttpServletRequest   servletRequest,Model  model,
+                                       @RequestParam (value = "goodsId") Long    goodsId,
+                                       @RequestParam(value="path" )String path){
       Cookie[] cookies = servletRequest.getCookies();
       if(cookies==null||cookies.length==0){
           return  null;
@@ -76,7 +82,14 @@ public class MiaoshaController  implements InitializingBean {
        if(user==null){
            return  Result.error(CodeMsg.SESSION_ERROR);
        }
-       //内存标记减少redis 访问
+      //验证地址是否相同
+      boolean checPath = miaoshaService.checPath(user, goodsId, path);
+      if(!checPath){
+          return  Result.error(CodeMsg.MIAOSHA_PATH_ERROR);
+      }
+
+
+      //内存标记减少redis 访问
        //查询是否有库存
       GoodsVo goods = goodsService.getGoodsVoByGoodsId(goodsId);
        if(goods.getStockCount()<=0){
@@ -176,4 +189,119 @@ public class MiaoshaController  implements InitializingBean {
 
       return  Result.success(result);
   }
+    /**
+     * 秒杀地址隐藏
+     * 先去请求接口获得秒杀地址
+     * 1.接口带上PathVarible参数
+     * 2.添加生成地址的接口，
+     * 3.秒杀收到请求的时候先验证Pathvarible
+     *
+     *点击秒杀---触发onclick事件---请求服务端地址getMashaPath()
+     * -----发送ajax get请求请求，请求参数为goodsId，url=“/miaosha/path”
+     * -----controller层的getMiaosha调用miaoshaservic
+     * String  path = create.MiashoPath(user,gooodsId,)
+     * ---path的组成是：UUID+123456
+     * ----path 保存在redis中key为userId+"_"+goodsId
+     *
+     * 前端接收成功：获得返回地址
+     * 调用 doMiaosha(path)
+     *
+     * doMiaosha(path) 的流程：
+     * 发送ajax 请求地址：url="/miaosha/"+path+"do_miaosha"
+     * --->sucess: getMiaoshaRessult($("#goodsId").val());
+     * --->error:显示错误“客户端”
+     *
+     * controller:
+     * miaosha方法 requestMapping请求地址“/{path}/do_miaosha”
+     * path 与redis 中获得path对比
+     * 如果比对不成功则返回比对失败
+     *
+     *
+     */
+    @ResponseBody
+    @RequestMapping(value = "/path")
+    public   Result<String>  getMiaoshaPath(HttpServletRequest  request, MiaoshaUser  user,
+                                            @RequestParam(value = "goodsId") Long  goodsId,
+    @RequestParam(value = "verifyCode",defaultValue = "0") Integer verifyCode
+    ){
+    // 获得访问次数
+        StringBuffer requestURL = request.getRequestURL();
+     Integer time = redisService.get(AccessKey.key, ""+requestURL, Integer.class);
+      if(time==null){
+          redisService.set(AccessKey.key,""+requestURL,1);
+
+      }
+      else  if(time<5){
+          Long incr = redisService.incr(AccessKey.key, "" + requestURL);
+          logger.info(" access  inctr"+incr);
+      }else {
+
+          logger.info(" times error "+CodeMsg.MIAOSHA_TIMESERROR);
+          return Result.error(CodeMsg.MIAOSHA_TIMESERROR);
+      }
+
+        logger.info("test");
+     user=getMiaoshauser(request);
+        if(user.getId()==null){
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+
+      //  Integer aveifyCode = Integer.valueOf(verifyCode);
+        logger.info("averifyCode "+verifyCode);
+        // 验证码是否正确
+        boolean ret=    miaoshaService.chechVerifyCode(user, goodsId,verifyCode);
+        if(!ret){
+            return  Result.error(CodeMsg.MIAOSHA_VERYCODEERROR);
+        }
+
+
+
+     logger.info("test2"+user);
+        String path = miaoshaService.createMiaoshaPath(user, goodsId);
+     return Result.success(path);
+    }
+
+
+    public   MiaoshaUser   getMiaoshauser(HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        if(cookies==null||cookies.length==0){
+            return  null;
+        }
+        String token=null;
+        for (int i = 0; i <cookies.length ; i++) {
+
+            String name = cookies[i].getName();
+            if(name.equals("token")){
+                token=cookies[i].getValue();
+                break;
+            }
+        }
+
+        MiaoshaUser miaoshaUseruser = redisService.get(MiaoshaUserKey.token, token, MiaoshaUser.class);
+        return  miaoshaUseruser;
+    }
+    @RequestMapping(value = "/verifyCode",method = RequestMethod.GET)
+    @ResponseBody
+    public Result<String> getMiaoshaVerifyCode(HttpServletRequest request,HttpServletResponse  response,
+                                              @RequestParam("goodsId")long goodsId) {
+        MiaoshaUser   user=  getMiaoshauser(request);
+        if(user == null) {
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        try {
+            BufferedImage image  = miaoshaService.createVerifyCode(user, goodsId);
+            OutputStream out = response.getOutputStream();
+            ImageIO.write(image, "JPEG", out);
+            out.flush();
+            out.close();
+            return null;
+        }catch(Exception e) {
+            e.printStackTrace();
+            return Result.error(CodeMsg.MIAOSHA_FAIL);
+        }
+    }
+
+
+
+
 }

@@ -27,4 +27,5 @@ public interface MiaoshaService {
    public   String  createMiaoshaPath(MiaoshaUser  user,long   gooodsId);
 
    public BufferedImage  createVerifyCode(MiaoshaUser  user,long  goodsId);
+   public boolean chechVerifyCode(MiaoshaUser user,Long  goodsId,Integer   veryCode);
 }

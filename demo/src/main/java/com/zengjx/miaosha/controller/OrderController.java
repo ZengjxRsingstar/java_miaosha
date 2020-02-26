@@ -43,7 +43,6 @@ public class OrderController {
     @ResponseBody
     public Result<OrderDetailVo> info(HttpServletRequest servletRequest , Model model, MiaoshaUser user,
 									  @RequestParam("orderId") long orderId) {
-
 		Cookie[] cookies = servletRequest.getCookies();
 		if(cookies==null||cookies.length==0){
 			return  null;

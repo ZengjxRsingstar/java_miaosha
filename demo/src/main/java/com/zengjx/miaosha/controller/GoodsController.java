@@ -172,7 +172,6 @@ public class GoodsController {
 
    @RequestMapping("/hello")
     public    String   hello(){
-
         return   "hello";
     }
 

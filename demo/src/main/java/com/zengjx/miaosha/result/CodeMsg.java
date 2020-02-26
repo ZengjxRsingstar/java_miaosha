@@ -40,7 +40,11 @@ public class CodeMsg {
     //秒杀模块 5005XX
     public static CodeMsg MIAO_SHA_OVER = new CodeMsg(500500, "商品已经秒杀完毕");
     public static CodeMsg REPEATE_MIAOSHA = new CodeMsg(500501, "不能重复秒杀");
-    public static CodeMsg MIAO_SHA_ERROR = new CodeMsg(500501, "秒杀异常");
+    public static CodeMsg MIAO_SHA_ERROR = new CodeMsg(500502, "秒杀异常");
+    public static CodeMsg MIAOSHA_PATH_ERROR = new CodeMsg(500503, "秒杀地址错误");
+    public static CodeMsg MIAOSHA_FAIL = new CodeMsg(500504, "秒杀失败");
+    public static CodeMsg MIAOSHA_VERYCODEERROR = new CodeMsg(500505, "验证码错误");
+    public static CodeMsg MIAOSHA_TIMESERROR = new CodeMsg(500505, "访问太频繁");
     //redis 模块错误
     public static CodeMsg REDIS_ERROR = new CodeMsg(500615, "REDIS错误");
     private CodeMsg( ) {
